@@ -17,8 +17,7 @@ table, caption, tbody, tfoot, thead, tr, th, td {
 }
 html , body{
 	line-height: 1;
-	/* background-color: #334873; */
-	background-color: none;
+	background-color: #334873;
 
 	background-image: url(../_images/bg-page2.png);
 }
