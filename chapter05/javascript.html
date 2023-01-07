@@ -14635,6 +14635,10 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
         <span class="n">background</span><span class="p">:</span> <span class="n">white</span><span class="p">;</span>
         <span class="n">color</span><span class="p">:</span> <span class="n">red</span><span class="p">;</span>
     <span class="p">}</span>
+    <span class="o">.</span><span class="n">wrapper</span><span class="p">{</span>
+        <span class="n">background</span><span class="p">:</span> <span class="n">black</span><span class="p">;</span>
+    <span class="p">}</span>
+    
 <span class="o">&lt;/</span><span class="n">style</span><span class="o">&gt;</span>
 
 <span class="o">&lt;</span><span class="n">a</span> <span class="nb">id</span><span class="o">=</span><span class="s2">&quot;render-btn&quot;</span> <span class="n">href</span><span class="o">=</span><span class="s2">&quot;https://nbviewer.org/github/HarryJamesGreenblatt/Websites-In-A-Can/blob/main/chapter05/javascript.ipynb&quot;</span><span class="o">&gt;</span><span class="n">Render</span> <span class="n">This</span> <span class="n">Notebook</span><span class="o">&lt;/</span><span class="n">a</span><span class="o">&gt;</span>
@@ -14669,6 +14673,10 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
         background: white;
         color: red;
     }
+    .wrapper{
+        background: black;
+    }
+    
 </style>
 
 <a id="render-btn" href="https://nbviewer.org/github/HarryJamesGreenblatt/Websites-In-A-Can/blob/main/chapter05/javascript.ipynb">Render This Notebook</a>
@@ -14698,7 +14706,7 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 	<span class="o">&lt;</span><span class="n">script</span> <span class="n">src</span><span class="o">=</span><span class="s2">&quot;jquery.js&quot;</span><span class="o">&gt;&lt;/</span><span class="n">script</span><span class="o">&gt;</span>
 <span class="o">&lt;/</span><span class="n">head</span><span class="o">&gt;</span>
 <span class="o">&lt;</span><span class="n">body</span><span class="o">&gt;</span>
-	<span class="o">&lt;</span><span class="n">div</span> <span class="n">class</span><span class="o">=</span><span class="s2">&quot;wrapper&quot;</span> <span class="n">style</span><span class="o">=</span><span class="s2">&quot;background: black;&quot;</span><span class="o">&gt;</span>
+	<span class="o">&lt;</span><span class="n">div</span> <span class="n">class</span><span class="o">=</span><span class="s2">&quot;wrapper&quot;</span><span class="o">&gt;</span>
 		<span class="o">&lt;</span><span class="n">div</span> <span class="n">class</span><span class="o">=</span><span class="s2">&quot;header&quot;</span><span class="o">&gt;</span>
 			<span class="o">&lt;</span><span class="n">p</span> <span class="n">class</span><span class="o">=</span><span class="s2">&quot;logo&quot;</span><span class="o">&gt;</span><span class="n">JavaScript</span> <span class="o">&lt;</span><span class="n">i</span><span class="o">&gt;&amp;&lt;/</span><span class="n">i</span><span class="o">&gt;</span> <span class="n">jQuery</span> <span class="o">&lt;</span><span class="n">i</span> <span class="n">class</span><span class="o">=</span><span class="s2">&quot;mm&quot;</span><span class="o">&gt;</span><span class="n">The</span><span class="o">&lt;</span><span class="n">br</span><span class="o">&gt;</span><span class="n">Missing</span><span class="o">&lt;</span><span class="n">br</span><span class="o">&gt;</span><span class="n">Manual</span><span class="o">&lt;/</span><span class="n">i</span><span class="o">&gt;&lt;/</span><span class="n">p</span><span class="o">&gt;</span>
 		<span class="o">&lt;/</span><span class="n">div</span><span class="o">&gt;</span>
@@ -14735,32 +14743,32 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 
 
 <div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output " data-mime-type="text/html">
-<!DOCTYPE html>
-<html>
-<head>
-	<meta charset="UTF-8">
-	<title>Introducing Events</title>
-	<link href="site.css" rel="stylesheet">
-	<script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
-	<script src="jquery.js"></script>
-</head>
-<body>
-	<div class="wrapper" style="background: black;">
-		<div class="header">
-			<p class="logo">JavaScript <i>&</i> jQuery <i class="mm">The<br>Missing<br>Manual</i></p>
-		</div>
-		<div class="content">
-			<div class="main">
-				<h1>Introducing Events</h1>
-				<p><a href="#">A Link</a></p>
-				<form action="#" method="get">
-					<fieldset><legend>A Form</legend><p><input name="button" type="button" id="button" value="A Button"></p>
-					<p><input name="textfield" id="textfield" type="text"></p></fieldset>
-				</form>
-			</div>
-		</div>
-	</div>
-</body>
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Introducing Events</title>
+	<link href="site.css" rel="stylesheet">
+	<script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
+	<script src="jquery.js"></script>
+</head>
+<body>
+	<div class="wrapper">
+		<div class="header">
+			<p class="logo">JavaScript <i>&</i> jQuery <i class="mm">The<br>Missing<br>Manual</i></p>
+		</div>
+		<div class="content">
+			<div class="main">
+				<h1>Introducing Events</h1>
+				<p><a href="#">A Link</a></p>
+				<form action="#" method="get">
+					<fieldset><legend>A Form</legend><p><input name="button" type="button" id="button" value="A Button"></p>
+					<p><input name="textfield" id="textfield" type="text"></p></fieldset>
+				</form>
+			</div>
+		</div>
+	</div>
+</body>
 </html>
 </div>
 
